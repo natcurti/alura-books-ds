@@ -44,7 +44,9 @@ export const AbTextField = ({
       <StyledInput
         type={type}
         value={value}
-        onChange={event => onChange(event.target.value)}
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+          onChange(e.target.value)
+        }
       />
     </div>
   );
