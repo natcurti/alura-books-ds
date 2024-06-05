@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { AbButton, AbButtonProps } from '../src/components/AbButton';
+import { AbButton, AbButtonProps } from '../src/';
 
 export default {
   title: 'components/AbButton',

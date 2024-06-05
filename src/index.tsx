@@ -1,6 +1,4 @@
 import React, { FC, HTMLAttributes, ReactChild } from 'react';
-import { AbButton } from './components/AbButton';
-import { Card } from './components/Card';
 
 export interface Props extends HTMLAttributes<HTMLDivElement> {
   /** custom content, defaults to 'the snozzberries taste like snozzberries' */
@@ -16,10 +14,6 @@ export const Thing: FC<Props> = ({ children }) => {
   return <div>{children || `the snozzberries taste like snozzberries`}</div>;
 };
 
-export const AbButtonComponent = () => {
-  return <AbButton />;
-};
-
-export const CardComponent = () => {
-  return <Card />;
-};
+export * from './components/AbButton';
+export * from './components/AbCard';
+export * from './components/AbTag';

@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-interface ICard {
-  children?: React.ReactNode;
+export interface IAbCard {
+  text?: string;
 }
 
 const CardStyled = styled.div`
@@ -12,6 +12,6 @@ const CardStyled = styled.div`
   border-radius: 10px;
 `;
 
-export const Card = ({ children }: ICard) => {
-  return <CardStyled>{children}</CardStyled>;
+export const AbCard = ({ text }: IAbCard) => {
+  return <CardStyled>{text}</CardStyled>;
 };
